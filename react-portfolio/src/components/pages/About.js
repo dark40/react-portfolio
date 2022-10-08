@@ -3,14 +3,12 @@ import React from 'react';
 export default function About() {
   return (
     <div>
-      <h1>About Page</h1>
+      <h3>About Page</h3>
       <p>
-        Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
-        Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed
-        mollis diam. Nunc aliquet risus ac finibus porta. Nam quis arcu non
-        lectus tincidunt fermentum. Suspendisse aliquet orci porta quam semper
-        imperdiet. Praesent euismod mi justo, faucibus scelerisque risus cursus
-        in. Sed rhoncus mollis diam, sit amet facilisis lectus blandit at.
+        Hi, I am Freddie. I'm a software engineer living in Melbourne. 
+        Besides my passion on coding, I also hold a master degree of Accounting & Finance with CPA certificate. 
+        I have been working in the NFP filed over 4 years. I have worked as an accountant, a graphic designer, but always believed in coding is the my true passion.
+        Check out more of my projects and feel free to contact me. 
       </p>
     </div>
   );
