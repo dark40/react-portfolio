@@ -14,6 +14,7 @@ export default function About() {
         style={styles.avatarSize}
         className="rounded-circle"
         alt="Avatar" />
+        
       <p>
         Hi, I am Freddie. I'm a software engineer living in Melbourne.
         Besides my passion on coding, I also hold a master degree of Accounting & Finance with CPA certificate.
