@@ -1,7 +1,10 @@
 import React from 'react';
 import imgTextEditor from '../../assets/text-editor.jpg';
 import imgTechBlog from '../../assets/tech-blog.jpg';
-import imgMagician from '../../assets/magician.jpg'
+import imgMagician from '../../assets/magician.jpg';
+import imgCocktail from '../../assets/cocktail.jpg';
+import imgNote from '../../assets/note.jpg';
+import imgWeather from '../../assets/weather.jpg';
 
 const styles = {
     textEditor: {
@@ -12,6 +15,15 @@ const styles = {
     },
     magician: {
         backgroundImage: `url(${imgMagician})`,
+    },
+    cocktail: {
+        backgroundImage: `url(${imgCocktail})`,
+    },
+    note: {
+        backgroundImage: `url(${imgNote})`,
+    },
+    weather: {
+        backgroundImage: `url(${imgWeather})`,
     }
 }
 
@@ -100,6 +112,96 @@ function Project() {
                                 </li>
                                 <li className="d-flex align-items-center">
                                     <a className='text-reset text-decoration-none' href='https://github.com/dark40/fridge-magican'>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-file-code" viewBox="0 0 16 16">
+                                            <path d="M6.646 5.646a.5.5 0 1 1 .708.708L5.707 8l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0a.5.5 0 1 0-.708.708L10.293 8 8.646 9.646a.5.5 0 0 0 .708.708l2-2a.5.5 0 0 0 0-.708l-2-2z" />
+                                            <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z" />
+                                        </svg>
+                                        <small>Code</small>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Project 4 - Note Taker */}
+                <div className="col">
+                    <div className="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style={styles.note}>
+                        <div className="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h3 className="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Note Taker</h3>
+                            <ul className="d-flex justify-content-end list-unstyled mt-auto">
+                                <li className="d-flex align-items-center me-3">
+                                    <a className='text-reset text-decoration-none' href='https://note-taker-dark40.herokuapp.com/notes'>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-file-play" viewBox="0 0 16 16">
+                                            <path d="M6 10.117V5.883a.5.5 0 0 1 .757-.429l3.528 2.117a.5.5 0 0 1 0 .858l-3.528 2.117a.5.5 0 0 1-.757-.43z" />
+                                            <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z" />
+                                        </svg>
+                                        <small>App</small>
+                                    </a>
+
+                                </li>
+                                <li className="d-flex align-items-center">
+                                    <a className='text-reset text-decoration-none' href='https://github.com/dark40/note-taker'>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-file-code" viewBox="0 0 16 16">
+                                            <path d="M6.646 5.646a.5.5 0 1 1 .708.708L5.707 8l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0a.5.5 0 1 0-.708.708L10.293 8 8.646 9.646a.5.5 0 0 0 .708.708l2-2a.5.5 0 0 0 0-.708l-2-2z" />
+                                            <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z" />
+                                        </svg>
+                                        <small>Code</small>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Project 5 - Cocktail */}
+                <div className="col">
+                    <div className="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style={styles.cocktail}>
+                        <div className="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h3 className="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Cocktail Recipe</h3>
+                            <ul className="d-flex justify-content-end list-unstyled mt-auto">
+                                <li className="d-flex align-items-center me-3">
+                                    <a className='text-reset text-decoration-none' href='https://dark40.github.io/cocktail-recipe-party-activity/'>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-file-play" viewBox="0 0 16 16">
+                                            <path d="M6 10.117V5.883a.5.5 0 0 1 .757-.429l3.528 2.117a.5.5 0 0 1 0 .858l-3.528 2.117a.5.5 0 0 1-.757-.43z" />
+                                            <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z" />
+                                        </svg>
+                                        <small>App</small>
+                                    </a>
+
+                                </li>
+                                <li className="d-flex align-items-center">
+                                    <a className='text-reset text-decoration-none' href='https://github.com/dark40/cocktail-recipe-party-activity'>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-file-code" viewBox="0 0 16 16">
+                                            <path d="M6.646 5.646a.5.5 0 1 1 .708.708L5.707 8l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0a.5.5 0 1 0-.708.708L10.293 8 8.646 9.646a.5.5 0 0 0 .708.708l2-2a.5.5 0 0 0 0-.708l-2-2z" />
+                                            <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z" />
+                                        </svg>
+                                        <small>Code</small>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Project 6 - Weather Report */}
+                <div className="col">
+                    <div className="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style={styles.weather}>
+                        <div className="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h3 className="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Weather Report</h3>
+                            <ul className="d-flex justify-content-end list-unstyled mt-auto">
+                                <li className="d-flex align-items-center me-3">
+                                    <a className='text-reset text-decoration-none' href='https://dark40.github.io/weather-dashboard/'>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-file-play" viewBox="0 0 16 16">
+                                            <path d="M6 10.117V5.883a.5.5 0 0 1 .757-.429l3.528 2.117a.5.5 0 0 1 0 .858l-3.528 2.117a.5.5 0 0 1-.757-.43z" />
+                                            <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z" />
+                                        </svg>
+                                        <small>App</small>
+                                    </a>
+
+                                </li>
+                                <li className="d-flex align-items-center">
+                                    <a className='text-reset text-decoration-none' href='https://github.com/dark40/weather-dashboard'>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-file-code" viewBox="0 0 16 16">
                                             <path d="M6.646 5.646a.5.5 0 1 1 .708.708L5.707 8l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0a.5.5 0 1 0-.708.708L10.293 8 8.646 9.646a.5.5 0 0 0 .708.708l2-2a.5.5 0 0 0 0-.708l-2-2z" />
                                             <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z" />

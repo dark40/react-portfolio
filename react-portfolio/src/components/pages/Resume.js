@@ -2,8 +2,8 @@ import React from 'react';
 
 export default function Resume() {
   return (
-    <div>
-      <h1>Contact Page</h1>
+    <div className='container px-4 py-5'>
+      <h2 className="pb-2 border-bottom">Resume</h2>
       <p>
         Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
         molestie urna. Aliquam semper ultrices varius. Aliquam faucibus sit amet

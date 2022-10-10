@@ -1,22 +1,57 @@
 import React from 'react';
 
-export default function Contact() {
+
+const handleFormSubmit = (e) => {
+  e.preventDefault();
+
+}
+
+
+export default function ContactForm(props) {
   return (
-    <div>
-      <h1>Contact Page</h1>
-      <p>
-        Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
-        molestie urna. Aliquam semper ultrices varius. Aliquam faucibus sit amet
-        magna a ultrices. Aenean pellentesque placerat lacus imperdiet
-        efficitur. In felis nisl, luctus non ante euismod, tincidunt bibendum
-        mi. In a molestie nisl, eu sodales diam. Nam tincidunt lacus quis magna
-        posuere, eget tristique dui dapibus. Maecenas fermentum elementum
-        faucibus. Quisque nec metus vestibulum, egestas massa eu, sollicitudin
-        ipsum. Nulla facilisi. Sed ut erat ligula. Nam tincidunt nunc in nibh
-        dictum ullamcorper. Class aptent taciti sociosqu ad litora torquent per
-        conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at
-        rhoncus. Etiam vel condimentum magna, quis tempor nulla.
-      </p>
+    <div className='container px-4 py-5'>
+      <h2 className="pb-2 border-bottom">Contact me</h2>
+      <div className="mb-3">
+        <label className="form-label">Your name</label>
+        <input
+          value={props.value}
+          type="text"
+          class="form-control"
+          id="name"
+          placeholder="your name"
+          data-toggle="tooltip" 
+          data-html="true"
+          data-placement="top" 
+          title="Please enter your name here" />
+      </div>
+      <div className="mb-3">
+        <label className="form-label">Email address</label>
+        <input
+          value={props.value}
+          type="email"
+          class="form-control"
+          id="email"
+          placeholder="name@example.com"
+          data-toggle="tooltip" 
+          data-html="true"
+          data-placement="top" 
+          title="Please enter your email here" />
+      </div>
+      <div className="mb-3">
+        <label className="form-label">Your message</label>
+        <textarea
+          class="form-control"
+          id="content"
+          value={props.value}
+          rows="3"
+          data-toggle="tooltip" 
+          data-html="true"
+          data-placement="top" 
+          title="Please enter your message here"></textarea>
+      </div>
+      <div lassName="mb-3">
+        <button onClick={props.handleFormSubmit} type="submit" class="btn btn-primary">Submit</button>
+      </div>
     </div>
   );
 }
