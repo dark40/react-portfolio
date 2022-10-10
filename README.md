@@ -16,3 +16,7 @@ AS AN employer looking for candidates with experience building single-page appli
 I WANT to view a potential employee's deployed React portfolio of work samples
 SO THAT I can assess whether they're a good candidate for an open position
 ```
+
+## Screenshot
+![About](./react-portfolio/src/assets/about.png)
+![Portfolio](./react-portfolio/src/assets/portfolio.png)
